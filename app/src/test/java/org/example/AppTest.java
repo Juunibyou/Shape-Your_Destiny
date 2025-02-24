@@ -28,4 +28,20 @@ public class AppTest {
     assertEquals(6.0, righttriangle.getArea(), 0.01);
     assertEquals(12.0, righttriangle.getPerimeter(), 0.01);
   }
+
+  @Test
+  public void testSquare(){
+    Square square = new Square(5);
+
+    assertEquals(25, square.getArea(), 0.01);
+    assertEquals(20, square.getPerimeter(), 0.01);
+  }
+
+  @Test
+  public void testIsocelesRightTriangle(){
+    IsocelesRightTriangle isocelesrighttriangle = new IsocelesRightTriangle(5);
+
+    assertEquals(12.5, isocelesrighttriangle.getArea(), 0.01);
+    assertEquals(17.07, isocelesrighttriangle.getPerimeter(), 0.01);
+  }
 }

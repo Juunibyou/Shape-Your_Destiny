@@ -9,6 +9,8 @@ public class RightTriangle extends Ashape{
         this.width = width;
     }
 
+    public double getDimension(){return length;}
+
     @Override
     public double getArea(){return 0.5 * length * width;}
 
