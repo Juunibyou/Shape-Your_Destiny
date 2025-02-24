@@ -1,7 +1,7 @@
 package org.example;
 
 
-public class Rectangle extends Ashape{
+public class Rectangle extends Ashape implements Polygon{
     private double width;
     private double length;
 
@@ -15,4 +15,7 @@ public class Rectangle extends Ashape{
 
     @Override
     public double getPerimeter() {return (length+width) * 2;}
+
+    @Override
+    public int NumberOfSides(){return 4;}
 }

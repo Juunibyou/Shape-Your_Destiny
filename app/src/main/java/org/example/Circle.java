@@ -1,6 +1,6 @@
 package org.example;
 
-public class Circle extends Ashape{
+public class Circle extends Ashape implements Polygon{
     private double radius;
 
     public Circle(double radius){
@@ -12,4 +12,7 @@ public class Circle extends Ashape{
 
     @Override
     public double getPerimeter() {return 2 * Math.PI * radius;}
+
+    @Override
+    public int NumberOfSides(){return 0;}
 }

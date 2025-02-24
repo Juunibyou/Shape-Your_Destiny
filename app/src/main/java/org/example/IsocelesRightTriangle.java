@@ -14,4 +14,7 @@ public class IsocelesRightTriangle extends RightTriangle{
     public double getPerimeter() {
         return 2 * getDimension() + (Math.sqrt(2) * getDimension());
     }
+
+    @Override
+    public int NumberOfSides() {return 3;}
 }

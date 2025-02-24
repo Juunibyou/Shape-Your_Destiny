@@ -44,4 +44,18 @@ public class AppTest {
     assertEquals(12.5, isocelesrighttriangle.getArea(), 0.01);
     assertEquals(17.07, isocelesrighttriangle.getPerimeter(), 0.01);
   }
+
+  @Test
+  public void testIsocelesRightTrianglePoly(){
+    IsocelesRightTriangle isocelesrighttriangle = new IsocelesRightTriangle(5);
+
+    assertEquals(3, isocelesrighttriangle.NumberOfSides());
+  }
+
+  @Test
+  public void testSquarePoly(){
+    Square square = new Square(5);
+
+    assertEquals(4, square.NumberOfSides());
+  }
 }

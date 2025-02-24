@@ -1,6 +1,6 @@
 package org.example;
 
-public class RightTriangle extends Ashape{
+public class RightTriangle extends Ashape implements Polygon{
     private double width;
     private double length;
 
@@ -16,4 +16,7 @@ public class RightTriangle extends Ashape{
 
     @Override
     public double getPerimeter(){return length + width + Math.sqrt(length*length + width*width);}
+
+    @Override
+    public int NumberOfSides(){return 3;}
 }
